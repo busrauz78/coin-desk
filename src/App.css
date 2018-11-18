@@ -1,32 +1,57 @@
-.App {
+body {
+  background-color: #0c2033;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  letter-spacing: .5px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.percent-raised {
+  color: #3cd483;
+}
+
+.percent-fallen {
+  color: #d64d96;
+}
+
+.loading-container {
+  width: 100%;
   text-align: center;
+  margin: 40px auto;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.error {
+  width: 100%;
+  margin: 40px 0;
+  text-align: center;
+  color: #d64d96;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Remove close icon from input on IE */
+input::-ms-clear {
+  display: none;
+}
+
+.header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #0f273d;
+  width: 100%;
+  height: 80px;
 }
 
-.App-link {
-  color: #61dafb;
+.header-logo {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 90px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 700px) {
+  .header-logo {
+    display: none;
   }
 }
